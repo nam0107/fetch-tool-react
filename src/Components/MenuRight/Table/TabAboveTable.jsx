@@ -9,7 +9,7 @@ class TabAboveTable extends Component {
                         <div tabIndex={-1} style={{ outline: 'none' }}>
                             <div className="Box-root Flex-flex"><a aria-selected="true" className="UnstyledLink ContentTab-link" role="tab" href="https://dashboard.stripe.com/test/payments?status%5B%5D=successful">
                                 <div className="ContentTab-inner ContentTab-inner--active ContentTab-inner--activeTop Box-root Padding-horizontal--20 Padding-vertical--16">
-                                    <span className="Text-color--blue Text-align--center Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap Text-display--block"><span className="ContentTab-text"><span>Succeeded</span></span></span>
+                                    <span className="Text-color--blue Text-align--center Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap Text-display--block"><span className="ContentTab-text"><span>All Event</span></span></span>
                                     <div className="ContentTab-chip ContentTab-chip--default Box-root Box-background--blue">
                                     </div>
                                 </div>
@@ -20,7 +20,8 @@ class TabAboveTable extends Component {
                         <div tabIndex={-1} style={{ outline: 'none' }}>
                             <div className="Box-root Flex-flex"><a aria-selected="false" className="UnstyledLink ContentTab-link" role="tab" tabIndex={-1} href="https://dashboard.stripe.com/test/payments?status%5B%5D=refunded&status%5B%5D=partially_refunded">
                                 <div className="ContentTab-inner Box-root Padding-horizontal--20 Padding-vertical--16">
-                                    <span className="Text-color--gray Text-align--center Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap Text-display--block"><span className="ContentTab-text"><span>Refunded</span></span></span>
+                                    <span className="Text-color--gray Text-align--center Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap Text-display--block"><span className="ContentTab-text"><span>Send 
+Success</span></span></span>
                                     <div className="ContentTab-chip ContentTab-chip--default Box-root Box-background--blue">
                                     </div>
                                 </div>
@@ -31,7 +32,7 @@ class TabAboveTable extends Component {
                         <div tabIndex={-1} style={{ outline: 'none' }}>
                             <div className="Box-root Flex-flex"><a aria-selected="false" className="UnstyledLink ContentTab-link" role="tab" tabIndex={-1} href="https://dashboard.stripe.com/test/payments?status%5B%5D=uncaptured">
                                 <div className="ContentTab-inner Box-root Padding-horizontal--20 Padding-vertical--16">
-                                    <span className="Text-color--gray Text-align--center Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap Text-display--block"><span className="ContentTab-text"><span>Uncaptured</span></span></span>
+                                    <span className="Text-color--gray Text-align--center Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap Text-display--block"><span className="ContentTab-text"><span>Send Fail</span></span></span>
                                     <div className="ContentTab-chip ContentTab-chip--default Box-root Box-background--blue">
                                     </div>
                                 </div>
@@ -42,7 +43,7 @@ class TabAboveTable extends Component {
                         <div tabIndex={-1} style={{ outline: 'none' }}>
                             <div className="Box-root Flex-flex"><a aria-selected="false" className="UnstyledLink ContentTab-link" role="tab" href="https://dashboard.stripe.com/test/payments" tabIndex={-1}>
                                 <div className="ContentTab-inner Box-root Padding-horizontal--20 Padding-vertical--16">
-                                    <span className="Text-color--gray Text-align--center Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap Text-display--block"><span className="ContentTab-text"><span>All</span></span></span>
+                                    <span className="Text-color--gray Text-align--center Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap Text-display--block"><span className="ContentTab-text"><span>Replied Mail</span></span></span>
                                     <div className="ContentTab-chip ContentTab-chip--default Box-root Box-background--blue">
                                     </div>
                                 </div>

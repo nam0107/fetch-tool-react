@@ -1,17 +1,24 @@
-import React, {Component} from 'react';
-import LeftMenu from './Component/LeftMenu'
-import RightMenu from './Component/RightMenu'
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import Main from "./Components/Main";
+import Login from "./Components/Auth/Login";
 
-class App extends Component {
 
-  render(){
-    return(
-      <div className = "db-World-scrollWrapper">
-        <LeftMenu />
-        <RightMenu />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <BrowserRouter>
+        <Route
+          path="/"
+          exact={true}
+          render={() => {
+            return <Redirect to="/login" />;
+          }}
+        />
+        <Route path="/home" component={Main} />
+        <Route path="/login" component={Login} />
+      </BrowserRouter>
+  );
 }
 
 export default App;

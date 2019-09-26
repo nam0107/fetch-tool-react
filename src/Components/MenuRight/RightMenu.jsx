@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import SearchBar from './SearchBar'
-import CenterTable from './CenterTable'
+import SearchBar from './Search/SearchBar'
+import CenterTable from './Table/CenterTable';
 
 
 class RightMenu extends Component {
