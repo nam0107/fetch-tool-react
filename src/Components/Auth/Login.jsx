@@ -1,99 +1,74 @@
 import "./style.css";
+import "./style1.css";
 import React from "react";
-import { ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 
 class Login extends React.Component {
-  constructor(props) {
-    super(props);
-    // this.handleLoginClick = this.handleLoginClick.bind(this);
-    this.state = { value: null };
-  }
-
-  handleLoginClick(e) {
-    // this.setState(() => ({ error_msg: "" }));
-    // auth.login(
-    //   this.refs.username.value,
-    //   this.refs.password.value,
-    //   (state, side) => {
-    //     if (!state) {
-    //       toast.error("Login failed!", {
-    //         position: toast.POSITION.BOTTOM_RIGHT
-    //       });
-    //     } else {
-    //       window.location = "/";
-    //     }
-    //   }
-    // );
-  }
-
   render() {
     return (
-      <div class="app-container">
-         <ToastContainer /> 
-        <div className="h-100">
-          <div className="d-flex h-100 justify-content-center align-items-center">
-            <div className="mx-auto app-login-box col-md-8">
-              <div className="app-logo-inverse mx-auto mb-3" />
-              <div className="modal-dialog w-100 mx-auto">
-                <div className="modal-content">
-                  <div className="modal-body">
-                    <div className="h5 modal-title text-center">
-                      <h4 className="mt-2">
-                        <div>Fetch Tool</div>
-                      </h4>
-                    </div>
-                    <form className>
-                      <div className="form-row">
-                        <div className="col-md-12">
-                          <div className="position-relative form-group">
-                            <input
-                              ref="username"
-                              id="exampleEmail"
-                              placeholder="Username here..."
-                              type="text"
-                              className="form-controll main-input"
-                              autoComplete="off"
-                            />
-                          </div>
+      <div className="nenLogin">
+        <div className="login-9" style={{backgroundColor: '#fefefe'}} >
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12" style={{backgroundColor: '#fefefe'}}>
+                <div className="form-section" style={{backgroundColor: 'white'}}>
+                  <div className="logo">
+                    <a href="google.com">Login</a>
+                  </div>
+                  {/* <div class="btn-section">
+                        <a href="#" class="link-btn active">Login</a>
+                        <a href="register-9.html" class="link-btn">Register</a>
+                    </div> */}
+                  <div className="login-inner-form">
+                    <form
+                      action="http://storage.googleapis.com/themevessel-products/logdy/index.html"
+                      method="GET"
+                    >
+                      <div className="form-group form-box">
+                        <input
+                          type="email"
+                          name="email"
+                          className="input-text"
+                          placeholder="Email Address"
+                        />
+                        <i className="flaticon-mail-2" />
+                      </div>
+                      <div className="form-group form-box">
+                        <input
+                          type="password"
+                          name="Password"
+                          className="input-text"
+                          placeholder="Password"
+                        />
+                        <i className="flaticon-password" />
+                      </div>
+                      <div className="checkbox clearfix">
+                        <div className="form-check checkbox-theme">
+                          <input
+                            className="form-check-input"
+                            type="checkbox"
+                            defaultValue
+                            id="rememberMe"
+                          />
+                          <label
+                            className="form-check-label"
+                            htmlFor="rememberMe"
+                          >
+                            Remember me
+                          </label>
                         </div>
-                        <div className="col-md-12">
-                          <div className="position-relative form-group">
-                            <input
-                              ref="password"
-                              id="examplePassword"
-                              placeholder="Password here..."
-                              type="password"
-                              className="main-input"
-                              autoComplete="off"
-                            />
-                          </div>
-                        </div>
+                        <a href="forgot-password-9.html">Forgot Password</a>
+                      </div>
+                      <div className="form-group mb-0">
+                        <button
+                          type="submit"
+                          className="btn-md btn-theme btn-block"
+                        >
+                          Login
+                        </button>
                       </div>
                     </form>
                   </div>
-                  <div className="modal-footer clearfix">
-                    <div className="float-left">
-                      {/* <a
-                        href="javascript:void(0);"
-                        className="btn-lg btn btn-link"
-                      >
-                        Recover Password
-                      </a> */}
-                    </div>
-                    <div className="float-right">
-                      <button
-                        className="btn btn-primary btn-lg"
-                        onclick="{this.handleLoginClick}"
-                      >
-                        Login
-                      </button>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              <div className="text-center text-white opacity-8 mt-3">
-                Copyright © Fetch Tool 2019
               </div>
             </div>
           </div>
