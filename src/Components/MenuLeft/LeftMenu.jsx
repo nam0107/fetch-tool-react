@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class LeftMenu extends Component {
     render() {
         return (
-            <div className="db-World-sideNavContainer">
+            <div className="db-World-sideNavContainer" style={{zIndex: 0}}>
                 <div className="db-SkipToContentButton" style={{ transform: 'scale(0)' }}>
                     <div className="PressableCore PressableCore--cursor--pointer PressableCore--height--large PressableCore--radius--all PressableCore--width PressableCore--width--auto PressableButton Button Button--color--blue db-SkipToContentButton-button Box-root Flex-inlineFlex" style={{ backgroundColor: 'rgb(85, 108, 214)', boxShadow: 'rgb(61, 78, 172) 0px 1px 0px 0px, rgb(85, 108, 214) 0px 0px 0px 1px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.22) 0px 2px 4px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px' }}>
                         <div className="PressableCore-base Box-root"><button className="UnstyledLink Button-element PressableContext Padding-horizontal--12 Padding-vertical--4 PressableContext--cursor--pointer PressableContext--display--inlineFlex PressableContext--fontLineHeight--28 PressableContext--fontSize--16 PressableContext--fontWeight--medium PressableContext--height PressableContext--height--large PressableContext--radius--all PressableContext--width PressableContext--width--auto" type="button" style={{ color: 'rgb(255, 255, 255)' }}>

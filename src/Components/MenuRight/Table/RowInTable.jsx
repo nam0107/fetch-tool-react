@@ -1,10 +1,10 @@
 import React, { Component } from "react";
+
 class RowInTable extends Component {
   
-
   render() {
     return (
-      <tr className="Table-row db-ListViewItem bs-ActionsParent BadgeParent db-ListViewItem--hasLink">
+      <tr className="Table-row db-ListViewItem bs-ActionsParent BadgeParent db-ListViewItem--hasLink" onClick={() => this.props.getIdEvent(this.props.event_id)}>
         <td
           className="Table-cell Table-cell--align--left Table-cell--verticalAlign--top Table-cell--width--minimized Table-cell--wrap--noWrap db-ListViewItem-cell db-BatchCell-container"
           style={{ height: "1px" }}
@@ -58,40 +58,40 @@ class RowInTable extends Component {
           className="Table-cell Table-cell--align--right Table-cell--verticalAlign--top Table-cell--width--minimized Table-cell--wrap--noWrap db-ListViewItem-cell db-ListViewItem-text"
           style={{ height: "1px" }}
         >
-          <a
+          {/* <a
             className="db-ListViewItem-link"
             href="https://dashboard.stripe.com/test/payments/ch_1FKhIhG1Nt1ZD4f4rXybJdzF"
-          >
+          > */}
             <div className="db-ListViewItem-cellContent Box-root Padding-all--8">
               <span className="db-ListViewItem-text Text-color--dark Text-fontSize--14 Text-fontWeight--medium Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--inline">
                 <span>{this.props.event_name}</span>
               </span>
             </div>
-          </a>
+          {/* </a> */}
         </td>
         <td
           className="Table-cell Table-cell--align--left Table-cell--verticalAlign--top Table-cell--width--minimized Table-cell--wrap--noWrap db-ListViewItem-cell"
           style={{ height: "1px" }}
         >
-          <a
+          {/* <a
             className="db-ListViewItem-link"
             href="https://dashboard.stripe.com/test/payments/ch_1FKhIhG1Nt1ZD4f4rXybJdzF"
-          >
+          > */}
             <div className="db-ListViewItem-cellContent Box-root Padding-all--8">
               {/* <span className="db-ListViewItem-text Text-color--gray Text-fontSize--14 Text-fontWeight--regular Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--inline">
                 MYR
               </span> */}
             </div>
-          </a>
+          {/* </a> */}
         </td>
         <td
           className="Table-cell Table-cell--align--left Table-cell--verticalAlign--top Table-cell--width--minimized Table-cell--wrap--noWrap db-ListViewItem-cell"
           style={{ height: "1px" }}
         >
-          <a
+          {/* <a
             className="db-ListViewItem-link"
             href="https://dashboard.stripe.com/test/payments/ch_1FKhIhG1Nt1ZD4f4rXybJdzF"
-          >
+          > */}
             <div className="db-ListViewItem-cellContent Box-root Padding-all--8">
               <div className="Badge Badge--variant--status Box-root Box-background--blue100 Padding-horizontal--8 Padding-vertical--2 Flex-inlineFlex Flex-alignItems--center Flex-direction--row">
                 <span className="Badge-text Text-color--blue600 Text-fontSize--12 Text-fontWeight--medium Text-lineHeight--16 Text-numericSpacing--proportional Text-typeface--base Text-wrap--noWrap Text-display--inline">
@@ -116,54 +116,54 @@ class RowInTable extends Component {
                 </div>
               </div>
             </div>
-          </a>
+          {/* </a> */}
         </td>
         <td
           title="Payment from UserId: 49154ee4-c4a5-4c5d-8594-e08841cf7824) || Booking ID #24fd17dc-d004-463c-a726-6ac736d2fb01"
           className="Table-cell Table-cell--align--left Table-cell--verticalAlign--top Table-cell--width--auto Table-cell--wrap--wrap db-ListViewItem-cell db-ListViewItem-cell--breakWord"
           style={{ height: "1px" }}
         >
-          <a
+          {/* <a
             className="db-ListViewItem-link"
             href="https://dashboard.stripe.com/test/payments/ch_1FKhIhG1Nt1ZD4f4rXybJdzF"
-          >
+          > */}
             <div className="db-ListViewItem-cellContent Box-root Padding-all--8">
               <span className="db-ListViewItem-text Text-color--default Text-fontSize--14 Text-fontWeight--regular Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--inline">
                 {/* Tieu de email ned */}
-                {this.props.event_mail_type}
+                {this.props.event_subject}
               </span>
             </div>
-          </a>
+          {/* </a> */}
         </td>
         <td
           aria-hidden="true"
           className="Table-cell Table-cell--align--left Table-cell--verticalAlign--top Table-cell--width--auto Table-cell--wrap--wrap db-ListViewItem-cell db-ListViewItem-cell--breakWord"
           style={{ height: "1px" }}
         >
-          <a
+          {/* <a
             className="db-ListViewItem-link"
             href="https://dashboard.stripe.com/test/payments/ch_1FKhIhG1Nt1ZD4f4rXybJdzF"
-          >
+          > */}
             <div className="db-ListViewItem-cellContent Box-root Padding-all--8">
               {/* ​Hoang Pham ned */}
               {this.props.event_membercreator}
             </div>
-          </a>
+          {/* </a> */}
         </td>
         <td
           className="Table-cell Table-cell--align--left Table-cell--verticalAlign--top Table-cell--width--minimized Table-cell--wrap--noWrap db-ListViewItem-cell"
           style={{ height: "1px" }}
         >
-          <a
+          {/* <a
             className="db-ListViewItem-link"
             href="https://dashboard.stripe.com/test/payments/ch_1FKhIhG1Nt1ZD4f4rXybJdzF"
-          >
+          > */}
             <div className="db-ListViewItem-cellContent Box-root Padding-all--8">
               <span className="db-ListViewItem-text Text-color--default Text-fontSize--14 Text-fontWeight--regular Text-lineHeight--20 Text-numericSpacing--proportional Text-typeface--base Text-wrap--wrap Text-display--inline">
-                <span>Sep 20, 3:17 PM</span>
+                <span>{this.props.event_date}</span>
               </span>
             </div>
-          </a>
+          {/* </a> */}
         </td>
         <td
           className="Table-cell Table-cell--align--left Table-cell--verticalAlign--top Table-cell--width--minimized Table-cell--wrap--noWrap db-ListViewItem-cell db-PaymentActionsCell"

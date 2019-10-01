@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 class SearchBar extends Component {
     render() {
         return (
-            <div className="db-World-topContent Box-root Box-background--surface Padding-vertical--20">
+            <div className="db-World-topContent Box-root Box-background--surface Padding-vertical--20" style={{zIndex: 0}}>
                 <div className="Box-root Flex-flex Flex-alignItems--center Flex-justifyContent--spaceBetween">
                     <div className="db-Spotlight-inputContainer">
                         <div className="Card-root Card--radius--all Card--shadow--small Box-root Box-background--white">

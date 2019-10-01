@@ -1,6 +1,6 @@
+import React from "react";
 import "./style.css";
 import "./style1.css";
-import React from "react";
 
 class Login extends React.Component {
   render() {
@@ -30,7 +30,7 @@ class Login extends React.Component {
                           className="input-text"
                           placeholder="Email Address"
                         />
-                        <i className="flaticon-mail-2" />
+                        <i className="fa fa-envelope" style={{marginTop: '5px'}}></i>
                       </div>
                       <div className="form-group form-box">
                         <input
@@ -39,7 +39,7 @@ class Login extends React.Component {
                           className="input-text"
                           placeholder="Password"
                         />
-                        <i className="flaticon-password" />
+                        <i className="fa fa-lock"style={{marginTop: '5px', marginRight: '3px'}}></i>
                       </div>
                       <div className="checkbox clearfix">
                         <div className="form-check checkbox-theme">

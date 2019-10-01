@@ -6,6 +6,14 @@ import TableDetail from "./TableDetai";
 import FooterTable from "../Pagination/FooterTable";
 
 class CenterTable extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+    };
+  }
+
+
   render() {
     return (
       <div
